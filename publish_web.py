@@ -17,3 +17,7 @@ st.area_chart(data)
 deg_slider = st.slider('celcius')
 st.write(deg_slider, "convert to fahrenheit: ", deg_slider*9/5 +32)
 st.write(f'Hi, there is new last script executed at {dt.datetime.now()}')
+
+# Optionally log the timestamp to a file
+with open("execution_log.txt", "a") as log_file:
+    log_file.write(f"Executed at: {dt.datetime.now()}\n")
