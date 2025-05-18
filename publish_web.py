@@ -3,6 +3,15 @@ import pandas as pd
 import datetime as dt
 
 st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
+st.title("trial publish app dashboard with another push make me confuse")
 st.subheader("enjoy the first app")
 st.write("""this is my first steamlit apps
          hahahah!!
