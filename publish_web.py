@@ -17,6 +17,7 @@ st.area_chart(data)
 deg_slider = st.slider('celcius')
 st.write(deg_slider, "convert to fahrenheit: ", deg_slider*9/5 +32)
 st.write(f'Hi, triggering the page to loads')
+st.write(f'Hi, triggering the page to loads')
 
 st.write(f'Hi, there is new last script executed at {dt.datetime.now()}')
 st.write(f'Hi, there is new last script executed at {dt.datetime.now()}')
