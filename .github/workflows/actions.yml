@@ -36,25 +36,5 @@ jobs:
       - name: Run script
         run: python publish_web.py
 
-      - name: Commit and push updated log
-        env:
-          TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          REPO: ${{ github.repository }}
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
 
-          # Use the token to authenticate with GitHub
-          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${REPO}.git
-
-          git pull origin main --no-rebase  # avoid rebase conflicts in CI
-
-          git add execution_log.txt
-
-          if git diff --cached --quiet; then
-            echo " No changes to commit."
-          else
-            git commit -m "Update execution log [auto]"
-            git push origin main
-          fi
 
